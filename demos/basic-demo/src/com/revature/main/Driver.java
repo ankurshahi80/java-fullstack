@@ -1,5 +1,7 @@
 package com.revature.main;
 
+import com.revature.model.Person;
+
 public class Driver {
     public static void main(String[] args) {
         System.out.println("Hello, world!");
@@ -7,6 +9,21 @@ public class Driver {
         methodA();
 
         methodB("absdefg");
+
+        // We are constructing a Person object
+        Person p1= new Person();
+
+        // Populate the object properties with  values
+        p1.firstName="John";
+        p1.lastname="Doe";
+        p1.age=18;
+
+        // Invoking a behaviour of that particular object
+        p1.speak();
+
+        // Jane Doe
+        Person myPerson = new Person("Jane","Doe", 25);
+        myPerson.speak();
 
         System.out.println("End of main() method");
     }
