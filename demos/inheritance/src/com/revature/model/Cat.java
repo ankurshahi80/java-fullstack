@@ -8,4 +8,17 @@ public class Cat extends Animal{
         this.name = name;
     }
 
+    public void sniffCatnip(){
+        System.out.println(this.name + " is sniffing catnip.");
+    }
+    /*
+        Getter and Setters
+     */
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
