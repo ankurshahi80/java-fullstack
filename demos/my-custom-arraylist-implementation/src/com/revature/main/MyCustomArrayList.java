@@ -1,23 +1,24 @@
 package com.revature.main;
 
-public class MyCustomArrayList {
+public class MyCustomArrayList<E> { // <E> is an example of generic, which allows us to use
+    // multiple different types for our MyCustomerArrayList
 
     private int numOfElements; // default value for primitive fields is 0, false, or null.
-    private Person[] value;
+    private E[] value;
 
     public MyCustomArrayList() {
-        this.value = new Person[2];
+        this.value = (E[]) new Object[2];
     }
 
     public MyCustomArrayList(int capacity){
-        this.value = new Person[capacity];
+        this.value = (E[]) new Object[capacity];
     }
 
-    public void add(Person element){
+    public void add(E element){
         // Check if numOfElements is the same as the size of the array
         if (this.numOfElements == value.length){ // if true, create a new array that is larger
-            Person[] oldArray = this.value;
-            this.value = new Person[this.numOfElements * 2]; // Create an array that is double the size of the original
+            E[] oldArray = this.value;
+            this.value = (E[]) new Object[this.numOfElements * 2]; // Create an array that is double the size of the original
 
             // copy over all the elements from the original array
             for (int i = 0; i <oldArray.length; i++){
@@ -29,11 +30,15 @@ public class MyCustomArrayList {
         this.numOfElements++;
     }
 
-    public Person get(int index){
+    public E get(int index){
         return this.value[index];
     }
 
     public int size() {
         return this.numOfElements;
+    }
+
+    public boolean isEmpty(){
+        return this.numOfElements == 0;
     }
 }
