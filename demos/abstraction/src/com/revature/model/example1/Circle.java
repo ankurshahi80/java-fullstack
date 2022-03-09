@@ -1,4 +1,4 @@
-package com.revature.model;
+package com.revature.model.example1;
 
 public class Circle extends Shape {
 
@@ -12,5 +12,13 @@ public class Circle extends Shape {
     @Override
     public double calculateArea() {
         return  Math.PI*this.radius * this.radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 }
