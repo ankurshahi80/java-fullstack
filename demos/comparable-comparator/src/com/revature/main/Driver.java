@@ -20,5 +20,14 @@ public class Driver {
         Collections.sort(people);
 
         System.out.println(people);
+
+        Collections.sort(people, new LastNameComparator());
+
+        System.out.println();
+        System.out.println(people);;
+
+        Collections.sort(people, new FirstNameComparator());
+        System.out.println();
+        System.out.println(people);
     }
 }

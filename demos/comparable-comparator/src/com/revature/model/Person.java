@@ -66,6 +66,8 @@ public class Person implements Comparable<Person> {
     // 0 means that the current instance is equal to the parameter instance
     // > 0 means that the current instance is greater than the parameter instance
     // <0 means that the current instance is less than the parameter instance
+
+    // NATURAL ORDERING of Person objects
     @Override
     public int compareTo(Person o) {
         // Sort by age, then by last name, then by first name
