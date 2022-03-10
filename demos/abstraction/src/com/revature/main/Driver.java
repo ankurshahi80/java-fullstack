@@ -47,5 +47,15 @@ public class Driver {
 
         System.out.println("myStrings.get(2): " +  myStrings.get(2)); // O(1) ArrayList
         System.out.println("myStrings.get(2): " + myStrings2.get(2)); // O(n) LinkedList
+
+        MyArrayList<Integer> myInts = new MyArrayList<>();
+        myInts.add(10);
+        myInts.add(12);
+        myInts.add(15);
+
+        for (int i:
+             myInts) {
+            System.out.println(i);
+        }
     }
 }
