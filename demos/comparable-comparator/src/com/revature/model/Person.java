@@ -68,6 +68,14 @@ public class Person implements Comparable<Person> {
     // <0 means that the current instance is less than the parameter instance
     @Override
     public int compareTo(Person o) {
+        // Sort by age, then by last name, then by first name
+
+        if (this.age == o.age){
+            if (this.lastName.equals(o.lastName)){
+                return this.firstName.compareTo(o.firstName);
+            }
+            return this.lastName.compareTo(o.lastName);
+        }
         return this.age - o.age;
     }
 }
