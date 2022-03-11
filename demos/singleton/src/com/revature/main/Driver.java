@@ -3,6 +3,8 @@ package com.revature.main;
 public class Driver {
 
     public static void main(String[] args) {
+
+//        MySingleton ms1 = new MySingleton(); This is not going to work as you can't instantiate a singleton
         MySingleton ms1 = MySingleton.getInstance();
 
         MySingleton ms2 = MySingleton.getInstance();
