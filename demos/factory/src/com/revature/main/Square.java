@@ -1,6 +1,6 @@
 package com.revature.main;
 
-public class Square {
+public class Square implements Shape {
 
     private double side;
 
@@ -8,7 +8,8 @@ public class Square {
         this.side = side;
     }
 
+    @Override
     public double getArea() {
-        return
+        return this.side * this.side;
     }
 }
