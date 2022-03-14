@@ -61,6 +61,33 @@
       display: inline-block;
       margin-top: 100px;
     }
+
+    .box {
+      padding: 100px;
+      text-align: center;
+      border: 5px solid black;
+      margin: 10px;
+    }
+
+    #A {
+      background-color: green;
+      position: relative;
+      z-index: 1;
+    }
+
+    #B{
+      background-color: red;
+      position: relative;
+      bottom: 50px; /*  Move up from the bottom 50px */
+      z-index: 0;
+    }
+
+    #C {
+      background-color: blue;
+      position: relative;
+      bottom: 100px;
+      z-index: -3;
+    }
   </style>
 </head>
 <body>
@@ -101,7 +128,11 @@
   <div class="resizing-demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis laboriosam deserunt et voluptatum porro officia autem, eligendi, suscipit consequuntur hic necessitatibus aut?</div>
 
   <span class="resizing-demo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis</span>
-  
+
   <span class="resizing-demo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis</span>
+
+  <div class="box" id="A">A</div>
+  <div class="box" id="B">B</div>
+  <div class="box" id="C">C</div>
 </body>
 </html>
