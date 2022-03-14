@@ -38,14 +38,3 @@ console.log(obj3);
 
 let myJSON2 = JSON.stringify(obj3);
 console.log(myJSON2);
-
-/*
-  Truthy/Falsy
-
-  JS like many programming languages has the concept of truthy vs. falsy. Java does not have this concept.
-*/
-
-// Empty strings can be treated as false values.
-// Any other string will be treates as true.
-console.log(''== false);
-console.log('');
