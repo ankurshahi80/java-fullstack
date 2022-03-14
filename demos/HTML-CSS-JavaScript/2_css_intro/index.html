@@ -8,7 +8,7 @@
 
   <!-- External styling -->
   <link rel="stylesheet" href="./style.css">
-  
+
   <!-- Internal styling -->
   <style>
     /* tag name selector
@@ -28,6 +28,9 @@
     /* id selector */
     #about-me {
       border: 5px solid green;
+      padding: 20px 15px 10px 5px; /* Clock-wise specification of top, right, bottom and left */
+      margin: 50px 30px 20px 0px;
+      text-align: center;
     }
 
     /* descendent selector (compound selector) = combination of selectors */
@@ -42,6 +45,22 @@
       color: deepskyblue;
     }
 
+    .resizing-demo {
+      background: green;
+      padding: 10px;
+      border: 10px solid black;
+      width: 200px;
+      height: 200px;
+    }
+
+    .resizing-demo2 {
+      background: green;
+      border: 10px solid black;
+      padding: 20px;
+      width: 100px;
+      display: inline-block;
+      margin-top: 100px;
+    }
   </style>
 </head>
 <body>
@@ -78,5 +97,11 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, repudiandae.</p>
     </div>
   </div>
+
+  <div class="resizing-demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis laboriosam deserunt et voluptatum porro officia autem, eligendi, suscipit consequuntur hic necessitatibus aut?</div>
+
+  <span class="resizing-demo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis</span>
+  
+  <span class="resizing-demo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis</span>
 </body>
 </html>
