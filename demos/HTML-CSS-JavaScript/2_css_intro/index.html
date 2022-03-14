@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- External styling -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Internal styling -->
+  <style>
+    /* tag name selector
+    It will select all p tags */
+    p {
+      color: red;
+    }
+
+    .purple-text {
+      color: purple;
+    }
+
+    .cyan-text {
+      color: cyan;
+    }
+
+    /* id selector */
+    #about-me {
+      border: 5px solid green;
+    }
+
+    /* descendent selector (compound selector) = combination of selectors */
+    /* Select all p tags that are descendents of the tag with an id of page-bottom */
+    /* descendant = child, or grand-child, or great-grand-child, etc */
+    #page-bottom p{
+      color: orangered;
+    }
+
+    /* Direct child */
+    #page-bottom > p {
+      color: deepskyblue;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 3 different ways of including styling onto a webpage
+      1. inline styling
+      2. internal styling
+      3. external styling
+  -->
+
+  <!-- class and id attributes
+  Every element can have a class and/or id attribute
+    1. class: used to classify an element into a particular group - multiple elements can belong to a particular class (classification)
+
+    2. id: used to uniquely identify a particular tag -     only 1 element per id is the convention 
+  -->
+
+  <!-- inline -->
+  <p style="color: blue; border: 2px solid black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus voluptatem, culpa similique eum sunt maiores quam officiis aspernatur aperiam?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos veniam accusantium unde omnis quo!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos veniam accusantium unde omnis quo!</p>
+
+  <p class="purple-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos veniam accusantium unde omnis quo!</p>
+
+  <p class="purple-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos veniam accusantium unde omnis quo!</p>
+
+  <p class="cyan-text" id="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos veniam accusantium unde omnis quo!</p>
+
+  <div id="page-bottom">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, omnis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, at?</p>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, repudiandae.</p>
+    </div>
+  </div>
+</body>
+</html>
