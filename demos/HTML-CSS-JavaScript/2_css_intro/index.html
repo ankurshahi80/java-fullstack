@@ -69,10 +69,15 @@
       margin: 10px;
     }
 
+    #positioning-container {
+      background-color: yellow;
+      position: relative;
+    }
+
     #A {
       background-color: green;
       position: relative;
-      z-index: 1;
+      /* z-index: 1; */
     }
 
     #B{
@@ -84,9 +89,10 @@
 
     #C {
       background-color: blue;
-      position: relative;
-      bottom: 100px;
-      z-index: -3;
+      position: absolute;
+      top: 0;
+      /* bottom: 100px; */
+      /* z-index: -3; */
     }
   </style>
 </head>
@@ -131,8 +137,11 @@
 
   <span class="resizing-demo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, nam? Accusamus quidem quaerat numquam iure quo veritatis</span>
 
-  <div class="box" id="A">A</div>
-  <div class="box" id="B">B</div>
-  <div class="box" id="C">C</div>
+  <div id="positioning-container">
+    <div class="box" id="A">A</div>
+    <div class="box" id="B">B</div>
+    <div class="box" id="C">C</div>
+  </div>
+  
 </body>
 </html>
